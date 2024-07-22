@@ -26,7 +26,7 @@ let List = document.querySelector('.List');
 function addDataToHTML(){
     plants.forEach(plant => {
      let newPlant = document.createElement('a');
-     newPlant.href = '/detail.html?id=' + plant.id;
+     newPlant.href = 'project/javascript/detail.html?id=' + plant.id;
      newPlant.classList.add('item');
      newPlant.innerHTML = `
      <img src="${plant.image}">
