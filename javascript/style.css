@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    font-family:  Poppins;
+    background-color: #98FF98;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+.container{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+}
+.title{
+    font-size: xx-large;
+    padding: 20px ;
+}
+.List .item img{
+    width: 90%;
+    filter: drop-shadow(0 50 px 20px #0009);
+}
+.List{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.List .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.List .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.List .item {
+    letter-spacing: 7px;
+}
+/* detail page */
+
+.detail{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: left;
+}
+.detail .image img{
+    width: 90%;
+}
+.detail .image{
+    position: relative;
+
+}
+.detail .name{
+    font-size: xxx-large;
+    padding: 40px 0 0 0;
+    margin: 0 0 10px 0;
+}
+.detail .description{
+    font-weight: 300;
+}
+ /* ipad */
+@media screen and (max-width: 992px) {
+    .List{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .List{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .detail{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .detail .image img{
+        width: unset;
+        height: 40vh;
+    }
+    .detail .name{
+        font-size: x-large;
+        margin: 0;
+    }
+}
